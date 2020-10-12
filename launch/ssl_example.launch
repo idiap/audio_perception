@@ -1,0 +1,10 @@
+<!-- play back the recording -->
+<launch>
+  <node pkg="audio_perception" type="ssl_nn.py" name="sound_localization" required="true"
+        args="-n stft --context-frames=25 -v /home/hwp/workspace/archs/models/rec_stft_resnetctx_c25a0_1task --marker --frame-id=Head"/>
+</launch>
+
+<!--
+  vim: filetype=xml
+-->
+
